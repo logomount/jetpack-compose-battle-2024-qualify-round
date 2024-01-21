@@ -89,13 +89,13 @@ fun Qualify2Screen() {
                     style = MaterialTheme.typography.bodyMedium.copy(letterSpacing = 0.5.sp),
                     textAlign = TextAlign.Center
                 )
-                Spacer(modifier = Modifier.height(34.dp))
+                Spacer(modifier = Modifier.height(34.5.dp))
                 Image(
                     modifier = Modifier.fillMaxWidth(),
                     painter = painterResource(id = R.drawable.img_qualify_2_onboard),
                     contentDescription = "Onboarding photo"
                 )
-                Spacer(modifier = Modifier.height(35.dp))
+                Spacer(modifier = Modifier.height(34.25.dp))
                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                     repeat(5) { index ->
                         if (index == 3) {

@@ -144,7 +144,7 @@ fun Qualify3Screen() {
             item(key = 1) {
                 LazyRow(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    horizontalArrangement = Arrangement.spacedBy(7.55.dp)
                 ) {
                     items(items = tags, key = { tag -> tag }) { tag ->
                         CompositionLocalProvider(LocalMinimumInteractiveComponentEnforcement provides false) {
@@ -214,7 +214,10 @@ fun Qualify3Screen() {
                         Column {
                             Text(
                                 text = "Lorem Ipsum",
-                                style = MaterialTheme.typography.titleMedium
+                                style = MaterialTheme.typography.titleMedium.copy(
+                                    letterSpacing = 0.5.sp
+                                ),
+                                color = MaterialTheme.colorScheme.onSurface
                             )
                             Text(
                                 text = card,
