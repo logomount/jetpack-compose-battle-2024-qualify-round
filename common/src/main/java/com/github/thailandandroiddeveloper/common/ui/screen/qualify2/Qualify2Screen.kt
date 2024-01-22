@@ -22,7 +22,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -55,10 +54,10 @@ fun Qualify2Screen() {
                     // TODO: Skip
                 },
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = Color.White,
+                    containerColor = MaterialTheme.colorScheme.onPrimary,
                     contentColor = MaterialTheme.colorScheme.onBackground,
-                    disabledContainerColor = Color.White,
-                    disabledContentColor = MaterialTheme.colorScheme.onPrimary
+                    disabledContainerColor = MaterialTheme.colorScheme.onPrimary,
+                    disabledContentColor = MaterialTheme.colorScheme.onBackground
                 )
             ) {
                 Text(

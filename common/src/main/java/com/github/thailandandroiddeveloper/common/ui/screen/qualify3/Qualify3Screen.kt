@@ -36,7 +36,6 @@ import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
@@ -108,7 +107,7 @@ fun Qualify3Screen() {
             modifier = Modifier
                 .padding(paddingValues)
                 .fillMaxSize()
-                .background(Color.White),
+                .background(MaterialTheme.colorScheme.onPrimary),
             contentPadding = PaddingValues(
                 top = 16.dp,
                 start = 16.dp
@@ -162,10 +161,10 @@ fun Qualify3Screen() {
                                 },
                                 enabled = tags.first() == tag,
                                 colors = SuggestionChipDefaults.suggestionChipColors(
-                                    containerColor = Color.White,
+                                    containerColor = MaterialTheme.colorScheme.onPrimary,
                                     labelColor = MaterialTheme.colorScheme.primary,
                                     iconContentColor = MaterialTheme.colorScheme.primary,
-                                    disabledContainerColor = Color.White,
+                                    disabledContainerColor = MaterialTheme.colorScheme.onPrimary,
                                     disabledLabelColor = MaterialTheme.colorScheme.outline,
                                     disabledIconContentColor = MaterialTheme.colorScheme.outline
                                 ),
