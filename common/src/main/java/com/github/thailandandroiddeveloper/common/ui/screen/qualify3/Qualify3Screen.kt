@@ -127,14 +127,14 @@ fun Qualify3Screen() {
                                     width = 160.dp,
                                     height = 320.dp
                                 )
-                                .clip(RoundedCornerShape(16.dp))
                                 .border(
                                     width = 2.dp,
                                     color = if (photos.first() == photo)
                                         MaterialTheme.colorScheme.primary
                                     else MaterialTheme.colorScheme.primaryContainer,
                                     shape = RoundedCornerShape(16.dp)
-                                ),
+                                )
+                                .clip(RoundedCornerShape(16.dp)),
                             painter = painterResource(id = photo),
                             contentDescription = "Profile photo"
                         )
@@ -144,7 +144,7 @@ fun Qualify3Screen() {
             item(key = 1) {
                 LazyRow(
                     modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(7.55.dp)
+                    horizontalArrangement = Arrangement.spacedBy(7.45.dp)
                 ) {
                     items(items = tags, key = { tag -> tag }) { tag ->
                         CompositionLocalProvider(LocalMinimumInteractiveComponentEnforcement provides false) {
